@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>lab12</title>
+	<meta charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+<!--dit script werkt met de for(in)-lus -->
+
+</head>
+
+<body>
+
+<script>
+var laptops = new Array();
+laptops['macbook'] =
+{'model':'air' , 'voorraad': 2000, 'prijs': 1090};
+laptops['asusbook'] =
+{'model':'wind' , 'voorraad': 1000,'prijs':990};
+laptops['dellbook'] =
+{'model':'fire' , 'voorraad': 987,'prijs':890};
+for(var model in laptops) {
+document.write('<br>Merk: '+ model);}
+</script>
+
+</body>
+</html>

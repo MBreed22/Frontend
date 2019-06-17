@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>title</title>
+	<meta charset=utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+<!--Dit script: werkt met de for-lus-->
+</head>
+
+<body>
+
+<script>
+for ( x = 0; x < 3; x++){
+
+document.write(' Dit is lus: ' + x + '</br>');
+}
+
+//Opgave 70
+
+var student = new Array('Zakaria','Hamsa','Mike','Pieter','Harry');
+for(x=0; x<student.length; x++) {
+document.write('<br> Element '+ x +' is '+ student[x]);
+
+}
+
+
+//opgave 72
+var tekst = '<br>Hij lijkt een beetje op Nelson Mandela.';
+lengte = tekst.length;
+klinkers = 0;
+document.write('<br>');
+for(x=0; x<lengte; x++) {
+	teken = tekst.charAt(x);
+	document.write(teken);
+	if (teken == ' '){
+	klinkers++;
+	}
+}
+document.write('<br> Tekst bevat ' + klinkers + ' spaties');
+
+//Opgave 73 _______________________________________________________
+
+var tekst = '<br>Hij lijkt een beetje op Nelson Mandela.';
+lengte = tekst.length;
+klinkers = 0;
+document.write('<br>');
+for(x=0; x<lengte; x++) {
+	teken = tekst.charAt(x);
+	document.write(teken);
+	if (teken == 'a'){
+	klinkers++;
+	}
+}
+document.write('<br> Aantal a: ' + klinkers );
+
+var tekst = '<br>Hij lijkt een beetje op Nelson Mandela.';
+lengte = tekst.length;
+klinkers = 0;
+document.write('<br>');
+for(x=0; x<lengte; x++) {
+	teken = tekst.charAt(x);
+	document.write(teken);
+	if (teken == 'e'){
+	klinkers++;
+	}
+}
+document.write('<br> Aantal e: ' + klinkers );
+
+var tekst = '<br>Hij lijkt een beetje op Nelson Mandela.';
+lengte = tekst.length;
+klinkers = 0;
+document.write('<br>');
+for(x=0; x<lengte; x++) {
+	teken = tekst.charAt(x);
+	document.write(teken);
+	if (teken == 'i'){
+	klinkers++;
+	}
+}
+document.write('<br> Aantal i: ' + klinkers );
+
+var tekst = '<br>Hij lijkt een beetje op Nelson Mandela.';
+lengte = tekst.length;
+klinkers = 0;
+document.write('<br>');
+for(x=0; x<lengte; x++) {
+	teken = tekst.charAt(x);
+	document.write(teken);
+	if (teken == 'o'){
+	klinkers++;
+	}
+}
+document.write('<br> Aantal o: ' + klinkers  );
+
+var tekst = '<br>Hij lijkt een beetje op Nelson Mandela.';
+lengte = tekst.length;
+klinkers = 0;
+document.write('<br>');
+for(x=0; x<lengte; x++) {
+	teken = tekst.charAt(x);
+	document.write(teken);
+	if (teken == 'u'){
+	klinkers++;
+	}
+}
+document.write('<br> Aantal u: ' + klinkers );
+
+//LAB 11 _______________________________________________________
+
+var getal = new Array();
+getal[0]='nul';
+getal[1]='een';
+getal[2]='twee';
+getal[3]='drie';
+getal[4]='vier';
+getal[5]='vijf';
+getal[6]='zes';
+getal[7]='zeven';
+getal[8]='acht';
+getal[9]='negen';
+
+//....
+
+</script>
+</body>
+</html>

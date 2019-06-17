@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<?php
+error_reporting(0);
+
+
+?>
+<form action="" method="post"> 
+<label for="getal">Bedrag</label>
+<input type="text" name="getal" placeholder="Vul bedrag in">
+
+
+<select>
+  <option name="sl" id="sl" value="dollar/euro">dollar/euro</option>
+  <option name="sl" id="sl" value="euro/dollar">euro/dollar</option>
+  <option name="sl" id="sl" value="ruble/euro">ruble/euro</option>
+  <option name="sl" id="sl" value="euro/ruble">euro/ruble</option>
+</select>
+
+<input type="submit" name="verzenden" id="verzenden" value="Converteren">
+</form>
+
+<br><br><br><br>
+<h2>Informatie</h2>
+<br><br>
+
+<?php
+
+$getal=$_POST["getal"];
+$select=$_POST["sl"];
+
+
+echo "Bedrag = $getal <br>";
+echo "select = $select <br>";
+
+echo "Bedrag inclusief $btw2 % BTW: € $uitkomst <br><br>";
+echo "<hr>";
+
+//KOERSEN_____________
+$euro_dollarkoers=1.36;
+$dollar_eurokoers=0.74;
+$euro_roebelkoers=48.40;
+$roebel_eurokoers=0.02;
+//KOERSEN___________
+
+if($select=="dollar/euro"){
+   $som=$getal1 + $getal2;
+   echo $getal1."+". $getal2."=".$som;
+     
+}
+elseif($select=="euro/dollar"){
+    $som=$getal1 - $getal2;
+    echo $getal1 ."-". $getal2."=".$som;
+    
+}
+elseif($select=="ruble/euro"){
+    $som=$getal1 * $getal2;
+    echo $getal1 ."x". $getal2."=".$som;
+}
+if($select=="euro/ruble"){
+    $som=$getal1 / $getal2;
+    echo $getal1 .":". $getal2."=".$som;
+}
+?>
+
+<h2>Resultaat:</h2>
+<br><br>
+
+<?php
+
+?>
+</body>
+</html>

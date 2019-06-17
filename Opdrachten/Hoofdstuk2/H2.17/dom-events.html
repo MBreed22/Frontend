@@ -1,0 +1,107 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	<title>title</title>
+	<meta charset=utf-8 />
+
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+<script src="dom-events.js"></script>
+<script>
+document.write('<form name="klok"> ' + '<input type="text" ' +
+'name="display" '+ 'size="8" '+
+'style="background-color: #30CE28; font-size: 44px" >' + '</form>');
+var nu = new Date ();
+var uur = nu.getHours();
+var min = nu.getMinutes();
+var alterneren = 0;
+function showklok(){
+min=((min < 10) ? '0': '') + min;
+
+if(alterneren){
+document.klok.display.value=uur + ':' + min;
+alterneren 0;
+} else {
+document.klok.display.value=uur + ':' + min;
+alterneren 1;
+}
+nu = new Date(); uur = nu.getHours(); min = nu.getMinutes();
+setTimeout('showklok()',1000);
+}
+
+// 219
+//Opgave 98 //103
+<body onLoad="showKlok();">
+<div>
+<a href="Javascript: showMedia();">
+<img src="ipad.jpg" id="media"></a>
+
+<img src="ipad.jpg" id="media"
+onmouseover="this.width=this.width*1.5"
+onmouseout="this.width=this.width/1.5">
+</div>
+
+//
+<label for= "man">Man:</label>
+<input type="radio"name="geslacht" id="man" value="m"
+onchange="
+if(document.custform.man.checked == true) {
+alert ('Welkom meneer!');
+}">
+
+<label for= "vrouw">vrouw:</label>
+<input type="radio"name="geslacht" id="vrouw" value="v"
+onchange="
+if(document.custform.vrouw.checked == true) {
+alert ('Welkom mevrouw!');
+}">
+
+//106
+<input type="submit" id="submit" name="submit"
+value="Verzend"
+onmouseover="style.color='green'"
+onmouseout="style.color='black'">
+<form action="mailto: emailadres.nl"
+	name="crustform"
+	method="post"
+	onsubmit="return(formcheck(this));">
+
+<input type="checkbox"
+name="gadget"
+id="smartphone"
+value="s"
+onchange="
+if(document.custform.gadget[0].checked)
+{
+alert('Smartphone besteld!' );
+}"'
+>
+
+<select onchange="
+	if(document.custform.berzorging.value == 'express') {
+
+getElementById('expres-info').style.display='block';
+getElementById('dag-info').style.display='none';
+getElementById('week-info').style.display='none';
+
+}"
+name="bezorging"> 
+
+<br>
+<div id="expres-info" style="display:none"> Express bestellling</div>
+<div id="dag-info" style="display:none"> Dag bestellling</div>
+<div id="week-info" style="display:none"> Week bestellling</div>
+
+</br>
+<input required type= "password" id="password"
+		placeholder=	"vul uw wachtwoord in"
+		onkeyup="herhalen()">
+
+</body>
+//______________________________
+</script>
+</body>
+
+</html>
